@@ -1,0 +1,104 @@
+/* Reset */
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Inter',sans-serif; }
+body, html { height:100%; overflow:hidden; }
+
+/* Container */
+.homepage-container { display:flex; height:100vh; }
+
+/* ===== Left Section ===== */
+.left-section {
+  flex:1;
+  position:relative;
+  background: linear-gradient(135deg,#6c63ff,#8a7bff);
+  display:flex; justify-content:center; align-items:center;
+}
+
+.form-container {
+  background: rgba(255,255,255,0.05);
+  padding:50px 35px;
+  border-radius:20px;
+  backdrop-filter: blur(12px);
+  width:90%; max-width:400px;
+  box-shadow:0 10px 40px rgba(0,0,0,0.1);
+}
+
+.form-header h1 { color:#fff; font-size:2rem; margin-bottom:10px; }
+.form-header p { color:#ddd; font-size:0.95rem; margin-bottom:20px; }
+
+.switch-buttons { display:flex; margin-bottom:25px; }
+.switch-buttons button {
+  flex:1; padding:10px 0; border-radius:50px; border:none;
+  margin-right:10px; cursor:pointer; font-weight:600;
+  background: rgba(255,255,255,0.2); color:#fff; transition:0.3s;
+}
+.switch-buttons button.active { background:#fff; color:#6c63ff; }
+
+.auth-form { display:flex; flex-direction:column; }
+.auth-form.hidden { display:none; }
+.form-group { margin-bottom:15px; }
+.form-group input {
+  padding:12px 15px; border-radius:12px; border:none; outline:none; font-size:0.95rem;
+}
+.submit-btn {
+  margin-top:10px; padding:12px; border-radius:12px; border:none;
+  background:#fff; color:#6c63ff; font-weight:600; cursor:pointer; transition:0.3s;
+}
+.submit-btn:hover { background:#e0dbff; }
+
+.float-shape {
+  position:absolute; border-radius:50%; background: rgba(255,255,255,0.15);
+  animation: float 6s ease-in-out infinite alternate;
+}
+.shape1 { width:120px; height:120px; top:20%; left:10%; }
+.shape2 { width:80px; height:80px; bottom:15%; right:15%; }
+@keyframes float { 0% { transform:translateY(0);} 50% { transform:translateY(-20px);} 100% { transform:translateY(0);} }
+
+/* ===== Right Section ===== */
+.right-section {
+  flex:1;
+  display:flex; 
+  flex-direction:column;
+  justify-content:center; 
+  align-items:center;
+  background: #f5f6fa;
+  position: relative;
+  gap:20px;
+  padding:20px;
+  text-align:center;
+}
+
+.right-section .intro-text h1 {
+  font-size:2rem;
+  color:#333;
+  margin-bottom:10px;
+}
+
+.right-section .intro-text p {
+  font-size:1rem;
+  color:#555;
+}
+
+/* Lottie Animation */
+.right-section .study-animation {
+  width: 450px;
+  max-width:90%;
+  height: auto;
+}
+
+/* Responsive */
+@media(max-width:900px) {
+  .homepage-container { flex-direction:column; }
+  .left-section, .right-section { flex:unset; width:100%; padding:40px; }
+  .right-section .study-animation { width:300px; height:auto; margin:0 auto; }
+}
+
+
+
+
+
+
+
+
+
+
+

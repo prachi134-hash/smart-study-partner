@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeuralEarn - Homepage</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module"></script>
+</head>
+<body>
+  <div class="homepage-container">
+    
+    <!-- Left Section: Login/Signup -->
+    <div class="left-section">
+      <div class="form-container">
+        <div class="form-header">
+          <h1 id="form-title">Login</h1>
+          <p id="form-subtitle">Welcome back! Sign in to continue your journey.</p>
+        </div>
+
+        <div class="switch-buttons">
+          <button id="login-btn" class="active">Login</button>
+          <button id="signup-btn">Sign Up</button>
+        </div>
+
+        <!-- Login Form -->
+        <form id="login-form" class="auth-form">
+          <div class="form-group">
+            <input type="email" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Password" required>
+          </div>
+          <button type="submit" class="submit-btn">Login</button>
+        </form>
+
+        <!-- Signup Form -->
+        <form id="signup-form" class="auth-form hidden">
+          <div class="form-group">
+            <input type="text" placeholder="Full Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Password" required>
+          </div>
+          <button type="submit" class="submit-btn">Sign Up</button>
+        </form>
+      </div>
+      <div class="float-shape shape1"></div>
+      <div class="float-shape shape2"></div>
+    </div>
+
+    <!-- Right Section: Welcome + Lottie Animation -->
+    <div class="right-section">
+      <div class="intro-text">
+        <h1>Welcome to NeuralEarn</h1>
+        <p>Your smart platform to learn, practice, and excel in studies.</p>
+      </div>
+      <dotlottie-wc 
+        class="study-animation"
+        src="https://lottie.host/7fcd59ad-d2db-46ad-b221-68cdfd011b12/oPisAGDNze.lottie" 
+        autoplay 
+        loop>
+      </dotlottie-wc>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
